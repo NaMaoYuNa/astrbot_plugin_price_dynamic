@@ -1,0 +1,32 @@
+{
+  "enabled": {
+    "type": "bool",
+    "default": false,
+    "desc": "总开关。开启后插件将按峰谷时段自动写入配置。"
+  },
+  "check_interval_seconds": {
+    "type": "int",
+    "default": 60,
+    "desc": "轮询当前时段的间隔（秒）。"
+  },
+  "peak_probability": {
+    "type": "float",
+    "default": 0.05,
+    "desc": "高峰时段 group_chat_plus 主动回复概率（最低 5%）。"
+  },
+  "valley_probability": {
+    "type": "float",
+    "default": 0.35,
+    "desc": "低谷时段 group_chat_plus 主动回复概率。"
+  },
+  "peak_max_turns": {
+    "type": "int",
+    "default": 10,
+    "desc": "高峰时段 agent_runner.compression.max_turns。"
+  },
+  "valley_max_turns": {
+    "type": "int",
+    "default": 20,
+    "desc": "低谷时段 agent_runner.compression.max_turns，-1 表示不压缩。"
+  }
+}

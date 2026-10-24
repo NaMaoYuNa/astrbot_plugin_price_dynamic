@@ -1,0 +1,5 @@
+name: price_dynamic
+desc: 根据 DeepSeek 峰谷定价动态调整群聊主动回复概率与上下文压缩轮数
+version: 1.0.0
+author: local
+repo: ""
